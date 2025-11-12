@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo - Flask & MySQL</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>¡Hola Mundo!</h1>
+    <p>Aplicación Flask con Docker Compose</p>
+    
+    <h2>Estado de la Base de Datos:</h2>
+    <p class="{% if 'Conectada' in db_status %}success{% else %}error{% endif %}">
+        📊 MySQL: {{ db_status }}
+    </p>
+    
+    <footer>
+        <p><small>Hecho con Python Flask + MySQL + Docker</small></p>
+    </footer>
+</body>
+</html>
